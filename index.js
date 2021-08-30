@@ -7,7 +7,7 @@ app.use(express.json())
 
 app.use(cors())
 app.use(cors({origin: 'https://heitorbackend.vercel.app',}))
-app.use(cors({origin: 'https://heitor-ricopozzi.vercel.app/',}))
+app.use(cors({origin: 'https://heitor-ricopozzi.vercel.app',}))
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
