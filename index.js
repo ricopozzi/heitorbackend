@@ -6,10 +6,12 @@ const routes = require('./routes')
 app.use(express.json())
 
 app.use(cors())
+app.use(cors({origin: 'https://heitorbackend.vercel.app',}))
+app.use(cors({origin: 'https://heitor-ricopozzi.vercel.app/',}))
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://heitorbackend.vercel.app/');
+    res.setHeader('Access-Control-Allow-Origin', 'https://heitor-ricopozzi.vercel.app/');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
