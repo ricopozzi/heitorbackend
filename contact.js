@@ -3,7 +3,7 @@ const axios = require('axios')
 const { response } = require('express')
 
 async function emailSending(req, res){
-    req.header({"Access-Control-Allow-Origin": "*"})
+    req.header("Access-Control-Allow-Origin")
 
  try{
   const transporter = nodemailer.createTransport({
